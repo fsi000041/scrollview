@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ed3f3f"
+        android:gravity="center"
+        android:text="Nick阳随意练习demo"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!--HorizontalScrollView，里面包含一个水平线性-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+        <!--水平线性布局-->
+        <LinearLayout
+            android:id="@+id/hscrollerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"></LinearLayout>
+
+    </HorizontalScrollView>
+    <!--HorizontalScrollView，里面包含一个水平线性-->
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="15sp"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="地区"
+            android:textColor="#333333" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:scrollbars="none">
+
+            <!--水平线性布局-->
+            <LinearLayout
+                android:id="@+id/hscrollerview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!--HorizontalScrollView，里面包含一个水平线性-->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+
+        <!--水平线性布局-->
+        <LinearLayout
+            android:id="@+id/hscrollerview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"></LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
